@@ -3,27 +3,8 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" href="game_style.css">
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
-	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 </head>
 <body>
-<script type="text/javascript">
-  $( function() {
-    $( document ).tooltip();
-  } );
-	$(document).ready(function(){
-		$('.testimages img').click(function(){
-			$(".wrapper").css("display","block");
-			$(".lightbox").fadeIn(1000);
-			$("#cross").css("display","block");
-			$("#cross").click(function(){
-				$('.wrapper').css("display","none");
-				$('.lightbox').css("display","none");
-				$('#cross').css("display","none");
-			})
-		});
-	})
-</script>
 <div class ="wrapper"></div>
  	<div class = "nav">
 		<div class="left-nav">
@@ -47,12 +28,38 @@
  		<input type="text" name="answer" placeholder="Answer">
  		<button>SUMBIT</button></div>
  	</div>
- 	<div class ="testimages">
+	<div class ="testimages">
  		<img src ="a.png" title="this is a image1"/>
- 		<img src ="a.png" title="this is a image2"/>
- 		<img src ="a.png" title="this is a image3"/>
- 		<img src ="a.png" title="this is a image4"/>
- 		<img src ="a.png" title="this is a image5"/>
  	</div>
+ 	</div>
+ 	<div class="testimages2">
+		<img src ="a.png" title="this is a image1"/>
+
+ 	</div>
+
+	<!-- external linking -->
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+	<!-- scripts -->
+	<script type="text/javascript">
+	  $( function() {
+	    $( document ).tooltip();
+	  } );
+		$(document).ready(function(){
+			$('.testimages img').click(function(){
+				$(".wrapper").css("display","block");
+				$(".lightbox").fadeIn(1000);
+				$("#cross").css("display","block");
+				$("#cross").click(function(){
+					$('.wrapper').css("display","none");
+					$('.lightbox').css("display","none");
+					$('#cross').css("display","none");
+				})
+			});
+		})
+	</script>
+
 </body>
 </html>
