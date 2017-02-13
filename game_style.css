@@ -88,15 +88,15 @@ body{
 }
 
 .testimages{
-	position: absolute;
-	width: 1%;
-	top: 42%;
-	left: 0%;
-	height: 20%;
+	position: relative;
+	width: 9%;
+	top: 69%;
+	left: 2%;
+	height: 50%;
 	display: flex;
 	transition: box-shadow 0.2s;
 }
-.testimages2{
+/*.testimages2{
 	position: absolute;
 	width: 1%;
 	top: 20%;
@@ -104,18 +104,18 @@ body{
 	height: 20%;
 	display: flex;
 	transition: box-shadow 0.2s;
-}
+}*/
 .testimages:hover{
-	position: absolute;
-	width: 1%;
-	top: 42%;
-	left: 0%;
-	height: 20%;
+	position: relative;
+	width: 9%;
+	top: 69%;
+	left: 2%;
+	height: 50%;
 	display: flex;
 	box-shadow: 0px 0px 20px #222222;
 	transition: box-shadow 0.2s;
 }
-.testimages2:hover{
+/*.testimages2:hover{
 	position: absolute;
 	width: 1%;
 	top: 20%;
@@ -124,22 +124,33 @@ body{
 	display: flex;
 	box-shadow: 0px 0px 20px #222222;
 	transition: box-shadow 0.2s;
-}
+}*/
 .testimages img{background-color:#222;
 	border:2px solid black;
 	width: 200px;
-	height: auto;
+	height: 10%;
 	padding: 0;
 	flex: 1;
 }
-.testimages2 img{background-color:#222;
+/*.testimages2 img{background-color:#222;
 	border:2px solid black;
 	width: 200px;
 	height: auto;
 	padding: 0;
 	flex: 1;
+}*/
+.testimages img:hover
+{
+	background-color:#222;
+	border:2px solid black;
+	width: 200px;
+	height: 10%;
+	padding: 0;
+	flex: 1;
+	box-shadow: 0px 0px 20px #222222;
+	transition: box-shadow 0.2s;
 }
-.testimages img :hover
+/*.testimages2 img:hover
 {
 	background-color:#222;
 	border:2px solid black;
@@ -149,18 +160,7 @@ body{
 	flex: 1;
 	box-shadow: 0px 0px 20px #222222;
 	transition: box-shadow 0.2s;
-}
-.testimages2 img:hover
-{
-	background-color:#222;
-	border:2px solid black;
-	width: 200px;
-	height: auto;
-	padding: 0;
-	flex: 1;
-	box-shadow: 0px 0px 20px #222222;
-	transition: box-shadow 0.2s;
-}
+}*/
 
 .lightbox{
 	display: none;
