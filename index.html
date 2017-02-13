@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="game_style.css">
+	<script   src="https://code.jquery.com/jquery-3.1.1.min.js"
+	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>	
+</head>
+<body>
+<script type="text/javascript">
+  $( function() {
+    $( document ).tooltip();
+  } );
+	$(document).ready(function(){
+		$('.testimages img').click(function(){
+			$(".wrapper").css("display","block");
+			$(".lightbox").fadeIn(1000);
+			$("#cross").css("display","block");
+			$("#cross").click(function(){
+				$('.wrapper').css("display","none");
+				$('.lightbox').css("display","none");
+				$('#cross').css("display","none");
+			})
+		});
+	})
+</script>
+<div class ="wrapper"></div>
+ 	<div class = "nav">
+ 		<div id="Teamname"> TEAMNAME</div>
+ 		<div id="Population">POPULATION: 30000</div>
+ 		<div id ="Rulebook"><a href ="site1.html" target="_blank"> RULEBOOK</a></div>
+ 		<div id ="Logout"><a href ="#" target="_blank">LOGOUT</a></div>
+ 	</div>
+ 	<img src ="close_1.png" id ="cross">
+ 	<div class="lightbox">
+ 		<p id="question">
+ 			Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+ 			Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. 
+ 			Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+ 		</p>
+ 		<div class="bottom">
+ 		<input type="text" name="answer" placeholder="Answer">
+ 		<button>SUMBIT</button></div>
+ 	</div>
+ 	<div class ="testimages">
+ 		<img src ="a.png" title="this is a image1"/>
+ 		<img src ="a.png" title="this is a image2"/>
+ 		<img src ="a.png" title="this is a image3"/>
+ 		<img src ="a.png" title="this is a image4"/>
+ 		<img src ="a.png" title="this is a image5"/>
+ 	</div>
+</body>
+</html>
