@@ -276,3 +276,22 @@ transition: box-shadow 0.2s;
 	box-shadow: 0px 0px 10px #222222;
 	transition: box-shadow 0.2s;
 }
+
+
+body {
+    margin: 0;
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+body {}
+
+.nav {
+    z-index: 999;
+    height: 12.3vh;
+}
+
+svg#landing-1 {
+    width: auto;
+}
