@@ -249,3 +249,6 @@ svg#landing-1 {
 #bullet_train{
 	animation: train 5s infinite linear  both;
 }
+#last_one{
+	transform: translate(-900px,0px);
+}
