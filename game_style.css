@@ -1,103 +1,45 @@
+
 body{
 	background-color: #DADFE1;
 	font-family: sans-serif;
+	overflow-x: scroll;
 }
-.wrapper{
-	position: absolute;
-	top: 0%;
-	right: 0%;
-	background-color: #222222;
-	opacity: 0.7;
-	display: none;
-	z-index: 5;
-	height: 100%;
-	width: 100vw;
+ul{
+	list-style-type: none;
 }
-
-.left-nav{
-	position:relative;
-	left:0;
-}
-
-.right-nav{
-	position: absolute;
-	right:0;
-}
-
-.nav{
-	font-weight: bold;
-	position: fixed;
-	background-color: #111;
+.navbar{text-transform: uppercase;
 	display: flex;
-	box-shadow: 7px 7px 7px #000000;
-	top: 0%;
-	left: 0%;
-	height:auto;
-	width: 100vw;
-	color: #AEA8D3;
+	flex-wrap: wrap;
+	flex-direction: row;
+	background-color:black;
 }
-.nav a{color: #D2D7D3;
-	text-decoration: none;
+.left-nav{display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	padding-left:20px;
 }
-.nav #Teamname{
-	position: relative;
-	left: 1%;
-	/*! top: 25%; */
-	color: #D2D7D3;
-	font-size: 1.3em;
-	font-family: arial;
-	margin-right: 5%;
-	padding-top: 10px;
-	padding-bottom: 5px;
-	padding-left: 10px;
+.left-nav ul{display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
 }
-.nav #Population{
-	position: relative;
-	font-family: arial;
-	color: #D2D7D3;
-	font-size: 1.3em;
-	padding-bottom: 10px;
-	padding-left: 10px;
-	/*! top:25%; */
+.left-nav ul li{color:white;
+	font-weight: bold;
+	font-size: 1.2em;
+	padding:10px;
 }
-
-.nav #Logout >a{
-	position: relative;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 26px;
-	padding-bottom: 26px;
-	transition:background-color 0.2s linear, color 0.2s linear, filter 0.2s linear;
+.right-nav{position: absolute;
+	right: 20px;
 }
-.nav #Logout:hover >a{
-	filter: drop-shadow(0px 0px 2px #ffffff);
-	position: relative;
-	color:black;
-	background-color:white;
-	text-decoration: none;
-	font-weight:bold;
-	transition:background-color 0.2s linear, color 0.2s linear, filter 0.2s linear;
+.right-nav ul{right:0px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
 }
-.nav #Rulebook{
-	position: absolute;
-	right: 40px;
-	margin:5px;
-	border:2px solid white;
-	padding:5px;
-	color: #D2D7D3;
-	right:15%;
-	font-size: 100%;
-	transition:background-color 0.2s linear;
+.right-nav ul li{color:white;
+	font-weight: bold;
+	font-size: 1.2em;
+	padding:10px;
 }
-.nav #Rulebook:hover{
-	background-color: white;
-	filter:drop-shadow(0px 0px 10px #999);
-	transition:background-color 0.2s linear, filter 0.2s;
-}
-.nav #Rulebook:hover >a{
-	color: black;
-}
-
 .mainimages{
 	position: absolute;
 	height: auto;
@@ -272,11 +214,9 @@ transition: filter 0.2s;
 }
 
 .svg-wrapper {
-    top: 12.3vh;
     position: relative;
-    width: 100%;
+    width:100vw;
     height: 87.7vh;
-    overflow-x: auto;
     overflow-y: hidden;
 }
 
@@ -286,14 +226,6 @@ body {
     min-height: 100vh;
     overflow: hidden;
 }
-
-body {}
-
-.nav {
-    z-index: 999;
-    height: 12.3vh;
-}
-
 svg#landing-1 {
     width: auto;
 }
