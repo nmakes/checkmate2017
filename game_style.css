@@ -230,3 +230,22 @@ body {
 svg#landing-1 {
     width: auto;
 }
+@keyframes train{
+	0%{
+		transform: translate(0,0);
+		opacity: 0.2;
+	}
+	20%{
+		opacity: 1;
+	}
+	80%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0.2;
+		transform: translate(-1200px,0px);
+	}
+}
+#bullet_train{
+	animation: train 5s infinite linear  both;
+}
