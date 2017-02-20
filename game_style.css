@@ -10,6 +10,7 @@ ul{
 .navbar{text-transform: uppercase;
 	display: flex;
 	flex-wrap: wrap;
+	z-index: 10;
 	flex-direction: row;
 	background-color:black;
 }
@@ -128,7 +129,7 @@ ul{
 	display: none;
 	background-color: #999;
 	position: absolute;
-	top: 30%;
+	top: 20%;
 	left: 30%;
 	border: 5px solid #222;
 	width: 40%;
@@ -204,10 +205,10 @@ title{
 }
 
 
-.svg_hover{
+.question{
 transition: filter 0.2s;
 }
-.svg_hover:hover{
+.question:hover{
 	 -webkit-filter: drop-shadow( 0px 0px 10px #000 );
             filter: drop-shadow( 0px 0px 10px #000 );
             transition: filter 0.2s;
