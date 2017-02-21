@@ -1,4 +1,3 @@
-
 body{
 	background-color: #DADFE1;
 	font-family: sans-serif;
@@ -6,41 +5,61 @@ body{
 }
 ul{
 	list-style-type: none;
+	padding:0px;
+}
+li{
+	padding: 0px;
+}
+.navwrapper{
+	position: fixed;
+	width: 100vw;
+	top:0px;
 }
 .navbar{
 	text-transform: uppercase;
 	display: flex;
 	flex-wrap: wrap;
-	height: 12vh;
+	height: 70px;
 	z-index: 10;
 	flex-direction: row;
-	background-color:black;
+	align-content: center;
+	background-color:#181818;
+	font-size: 15px;
 }
-.left-nav{display: flex;
+.left-nav{
+	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
+	align-content: center;
 	padding-left:20px;
 }
-.left-nav ul{display: flex;
+.left-nav ul{
+	display: flex;
 	flex-wrap: wrap;
+	align-content: center;
 	flex-direction: row;
 }
 .left-nav ul li{color:white;
 	font-weight: bold;
 	font-size: 1.2em;
+	align-content: center;
 	padding:10px;
 }
 .right-nav{position: absolute;
+	display: flex;
 	right: 20px;
+	align-content: center;
 }
 .right-nav ul{right:0px;
 	display: flex;
 	flex-wrap: wrap;
+	align-content: center;
 	flex-direction: row;
 }
 .right-nav ul li{color:white;
 	font-weight: bold;
 	font-size: 1.2em;
+	align-content: center;
 	padding:10px;
 }
 .mainimages{
@@ -190,7 +209,7 @@ title{
     position: fixed;
     bottom: 0px;
     width:100vw;
-    height: 88vh;
+    height: 100vh;
     overflow-y: hidden;
 }
 
@@ -202,4 +221,54 @@ body {
 }
 svg#landing-1 {
     width: auto;
+}
+
+a{
+	text-decoration: none;
+	color
+}
+
+.nav-button{
+	text-decoration: none;
+	color: #f8f8f8;
+	background-color: #181818;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: background-color 0.1s, padding 0.1s, color 0.1s;
+}
+
+.nav-button:hover{
+	text-decoration: none;
+	background-color: #f8f8f8;
+	padding-top: 20px;
+	padding-bottom: 17px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #181818;
+	transition: background-color 0.1s, padding 0.1s, color 0.1s;
+}
+
+.nav-button:active{
+	text-decoration: none;
+	color: #181818;
+	padding-top: 13px;
+	padding-bottom: 17px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: lightblue;
+	transition: background-color 0.1s, padding 0.1s, color 0.1s;
+}
+
+.nav-button:visited{
+	text-decoration: none;
+	text-decoration: none;
+	padding-top: 20px;
+	padding-bottom: 17px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #f8f8f8;
+	background-color: #181818;
+	transition: background-color 0.1s, padding 0.1s, color 0.1s;
 }
