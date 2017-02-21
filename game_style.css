@@ -7,9 +7,11 @@ body{
 ul{
 	list-style-type: none;
 }
-.navbar{text-transform: uppercase;
+.navbar{
+	text-transform: uppercase;
 	display: flex;
 	flex-wrap: wrap;
+	height: 12vh;
 	z-index: 10;
 	flex-direction: row;
 	background-color:black;
@@ -59,15 +61,7 @@ ul{
 	display: flex;
 	transition: box-shadow 0.2s;
 }
-/*.testimages2{
-	position: absolute;
-	width: 1%;
-	top: 20%;
-	left: 0%;
-	height: 20%;
-	display: flex;
-	transition: box-shadow 0.2s;
-}*/
+
 .testimages:hover{
 	position: relative;
 	width: auto;
@@ -78,16 +72,7 @@ ul{
 	box-shadow: 0px 0px 20px #222222;
 	transition: box-shadow 0.2s;
 }
-/*.testimages2:hover{
-	position: absolute;
-	width: 1%;
-	top: 20%;
-	left: 0%;
-	height: 20%;
-	display: flex;
-	box-shadow: 0px 0px 20px #222222;
-	transition: box-shadow 0.2s;
-}*/
+
 .testimages img{background-color:#222;
 	border:2px solid black;
 	width: 200px;
@@ -95,13 +80,8 @@ ul{
 	padding: 0;
 	flex: 1;
 }
-/*.testimages2 img{background-color:#222;
-	border:2px solid black;
-	width: 200px;
-	height: auto;
-	padding: 0;
-	flex: 1;
-}*/
+
+
 .testimages img:hover
 {
 	background-color:#222;
@@ -113,17 +93,6 @@ ul{
 	box-shadow: 0px 0px 20px #222222;
 	transition: box-shadow 0.2s;
 }
-/*.testimages2 img:hover
-{
-	background-color:#222;
-	border:2px solid black;
-	width: 200px;
-	height: auto;
-	padding: 0;
-	flex: 1;
-	box-shadow: 0px 0px 20px #222222;
-	transition: box-shadow 0.2s;
-}*/
 
 .lightbox{
 	display: none;
@@ -139,6 +108,7 @@ ul{
 .lightbox p#question{
 	position: absolute;
 	top: -5%;
+	text-align: justify;
 	margin-right: 5%;
 	padding:20px;
 	color: black;
@@ -206,18 +176,21 @@ title{
 
 
 .question{
-transition: filter 0.2s;
+	transition: filter 0.2s;
+	filter: drop-shadow(0px 0px 0px #000);
 }
+
 .question:hover{
-	 -webkit-filter: drop-shadow( 0px 0px 10px #000 );
-            filter: drop-shadow( 0px 0px 10px #000 );
-            transition: filter 0.2s;
+    filter: drop-shadow( 0px 0px 10px #000 );
+    transition: filter 0.2s;
 }
 
 .svg-wrapper {
-    position: relative;
+	
+    position: fixed;
+    bottom: 0px;
     width:100vw;
-    height: 87.7vh;
+    height: 88vh;
     overflow-y: hidden;
 }
 
