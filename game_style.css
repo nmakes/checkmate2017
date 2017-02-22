@@ -272,3 +272,26 @@ a{
 	background-color: #181818;
 	transition: background-color 0.1s, padding 0.1s, color 0.1s;
 }
+
+@keyframes train{
+	0%{
+		transform: translate(0,0);
+		opacity: 0.2;
+	}
+	20%{
+		opacity: 1;
+	}
+	80%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0.2;
+		transform: translate(-1200px,0px);
+	}
+}
+#bullet_train{
+	animation: train 5s infinite linear  both;
+}
+#last_one{
+	transform: translate(-900px,0px);
+}
