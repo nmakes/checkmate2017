@@ -196,12 +196,14 @@ title{
 
 .question{
 	transition: filter 0.2s;
-	filter: drop-shadow(0px 0px 0px #000);
+	/*filter: drop-shadow(0px 0px 0px #000);*/
+	/*filter:url(#dropshadow);*/
 }
 
 .question:hover{
-    filter: drop-shadow( 0px 0px 10px #000 );
-    transition: filter 0.2s;
+    /*filter: drop-shadow( 0px 0px 10px #000 );*/
+    /*filter:url(#dropshadow);*/
+    /*transition: filter 0.2s;*/
 }
 
 .svg-wrapper {
