@@ -10,6 +10,11 @@ ul{
 li{
 	padding: 0px;
 }
+
+.solved{
+	display:none;
+}
+
 .navwrapper{
 	position: fixed;
 	width: 100vw;
@@ -196,14 +201,24 @@ title{
 
 .question{
 	transition: filter 0.2s;
-	/*filter: drop-shadow(0px 0px 0px #000);*/
-	/*filter:url(#dropshadow);*/
+	filter: drop-shadow 1s;
+	display: none;
+}
+
+.question:hover hoverText{
+    filter: drop-shadow( 0px 0px 10px #000 );
+    display: block;
+    transition: filter 1s;
 }
 
 .question:hover{
-    /*filter: drop-shadow( 0px 0px 10px #000 );*/
-    /*filter:url(#dropshadow);*/
-    /*transition: filter 0.2s;*/
+    filter: drop-shadow( 0px 0px 10px #000 );
+    transition: filter 1s;
+}
+
+.hoverText{
+	display: none;
+	position: relative;
 }
 
 .svg-wrapper {
