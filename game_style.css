@@ -191,7 +191,7 @@ title{
 
 
 .question{
-	/* display: none; */
+	display: none;
 }
 
 .question:hover{
@@ -199,7 +199,7 @@ title{
 }
 
 .solved{
-	display:none;
+	/*display:none;*/
 }
 
 .svg-wrapper {
@@ -279,4 +279,3 @@ a{
 	transform: translate(-1000px,0px);
 	opacity: 0;
 }
-
