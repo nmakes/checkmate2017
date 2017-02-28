@@ -11,10 +11,6 @@ li{
 	padding: 0px;
 }
 
-.solved{
-	display:none;
-}
-
 .navwrapper{
 	position: fixed;
 	width: 100vw;
@@ -83,7 +79,6 @@ li{
 	left: 2%;
 	height: 50%;
 	display: flex;
-	transition: box-shadow 0.2s;
 }
 
 .testimages:hover{
@@ -94,7 +89,6 @@ li{
 	height: 50%;
 	display: flex;
 	box-shadow: 0px 0px 20px #222222;
-	transition: box-shadow 0.2s;
 }
 
 .testimages img{background-color:#222;
@@ -115,7 +109,6 @@ li{
 	padding: 0;
 	flex: 1;
 	box-shadow: 0px 0px 20px #222222;
-	transition: box-shadow 0.2s;
 }
 
 .lightbox{
@@ -175,7 +168,6 @@ li{
 	position: absolute;
 	top: 60px;
 	right: 60px;
-	transition: box-shadow 0.2s;
 }
 #cross:hover {
 	display: none;
@@ -184,7 +176,6 @@ li{
 	top: 60px;
 	right: 60px;
 	box-shadow: 0px 0px 20px #222222;
-	transition: box-shadow 0.2s;
 }
 img#cross{padding:10px;
 	background-color: black;
@@ -200,25 +191,15 @@ title{
 
 
 .question{
-	transition: filter 0.2s;
-	filter: drop-shadow 1s;
 	display: none;
-}
-
-.question:hover hoverText{
-    filter: drop-shadow( 0px 0px 10px #000 );
-    display: block;
-    transition: filter 1s;
 }
 
 .question:hover{
     filter: drop-shadow( 0px 0px 10px #000 );
-    transition: filter 1s;
 }
 
-.hoverText{
-	display: none;
-	position: relative;
+.solved{
+	/*display:none;*/
 }
 
 .svg-wrapper {
@@ -254,7 +235,6 @@ a{
 	padding-bottom: 5px;
 	padding-left: 10px;
 	padding-right: 10px;
-	transition: background-color 0.5s, padding 0.5s, color 0.5s;
 }
 
 .nav-button:hover{
@@ -265,7 +245,6 @@ a{
 	padding-left: 10px;
 	padding-right: 10px;
 	color: #181818;
-	transition: background-color 0.5s, padding 0.5s, color 0.5s;
 }
 
 .nav-button:active{
@@ -276,7 +255,6 @@ a{
 	padding-left: 10px;
 	padding-right: 10px;
 	background-color: lightblue;
-	transition: background-color 0.5s, padding 0.5s, color 0.5s;
 }
 
 @keyframes train{
